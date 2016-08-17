@@ -1,5 +1,6 @@
-FROM ubuntu:14.04
+FROM node:6.4.0
 MAINTAINER Wujiajun <285701156@qq.com>
+FROM ubuntu:14.04
 
 WORKDIR /tmp
 RUN apt-get update && \
@@ -12,7 +13,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 WORKDIR /
-
-FROM node:6.4.0
 
 CMD ["node"]
