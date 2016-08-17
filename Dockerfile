@@ -9,11 +9,9 @@ RUN apt-get update && \
     apt-get purge -y wget && \
     apt-get autoremove -y && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
+    rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 WORKDIR /
-
-ENTRYPOINT ["wkhtmltopdf"]
 
 FROM node:6.4.0
 
