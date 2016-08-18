@@ -5,7 +5,6 @@ RUN cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y \
 		fontconfig \
-		ttf-mscorefonts-installer \
 		xfonts-wqy \
 		xfonts-base \
 		xfonts-75dpi \
