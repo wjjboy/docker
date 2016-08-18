@@ -16,9 +16,7 @@ RUN cd /tmp \
 		xfonts-75dpi \
 	&& curl -SLO "http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" \
 	&& tar -xJf "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
-	&& apt-get clean && \
-    && rm "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz"
-
-ENV LANG=en_US.UTF-8
+    && rm "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" \
+	&& apt-get clean
 
 CMD ["node"]
