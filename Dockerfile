@@ -13,4 +13,6 @@ RUN cd /tmp \
 	&& tar -xJf "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
     && rm "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz"
 
+ENV LANG=C.UTF-8
+
 CMD ["node"]
