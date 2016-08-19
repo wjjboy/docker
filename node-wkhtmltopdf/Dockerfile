@@ -6,7 +6,7 @@ ADD /fonts/ /usr/share/fonts/chinese/TrueType
 RUN cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y \
-		xz-utils
+		xz-utils \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
