@@ -8,6 +8,8 @@ RUN buildDeps='xz-utils' \
 	&& cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y $buildDeps --no-install-recommends \
+		libssl-dev \
+		libxrender-dev \
 		xfonts-base \
 		xfonts-75dpi \
 		xserver-common \
