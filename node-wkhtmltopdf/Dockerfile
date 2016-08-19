@@ -5,7 +5,7 @@ ADD /fonts/ /usr/share/fonts/chinese/TrueType
 
 RUN buildDeps='xz-utils' \
     && set -x \
-	$$ cd /tmp \
+	&& cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y $buildDeps --no-install-recommends \
 		xfonts-base \
