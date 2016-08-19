@@ -8,8 +8,6 @@ RUN buildDeps='xz-utils' \
 	&& cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y \
-		fontconfig \
-		libssl-dev \
 		libxrender-dev \
 		xfonts-base \
 		xfonts-75dpi \
