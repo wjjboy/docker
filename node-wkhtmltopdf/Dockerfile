@@ -1,5 +1,5 @@
 FROM node:6.4.0-slim
-MAINTAINER Wujiajun <285701156@qq.com>
+MAINTAINER wjjboy <285701156@qq.com>
 
 RUN cd /tmp \
 	&& apt-get update \
