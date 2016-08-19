@@ -7,7 +7,8 @@ RUN buildDeps='xz-utils' \
     && set -x \
 	&& cd /tmp \
 	&& apt-get update \
-	&& apt-get install -y $buildDeps --no-install-recommends \
+	&& apt-get install -y $buildDeps --no-install-recommends \\
+		fontconfig \
 		libssl-dev \
 		libxrender-dev \
 		xfonts-base \
