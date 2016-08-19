@@ -4,8 +4,6 @@ MAINTAINER wjjboy <285701156@qq.com>
 ADD /fonts/ /usr/share/fonts/chinese/TrueType
 
 RUN buildDeps='xz-utils' \
-    && set -x \
-	&& cd /tmp \
 	&& apt-get update \
 	&& apt-get install -y \
 		libxrender-dev \
