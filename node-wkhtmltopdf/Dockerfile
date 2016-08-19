@@ -7,7 +7,7 @@ RUN buildDeps='xz-utils' \
     && set -x \
 	&& cd /tmp \
 	&& apt-get update \
-	&& apt-get install -y $buildDeps --no-install-recommends \\
+	&& apt-get install -y \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
@@ -17,6 +17,6 @@ RUN buildDeps='xz-utils' \
 	&& curl -SLO "http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" \
 	&& tar -xJf "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
     && rm "wkhtmltox-0.12.3_linux-generic-amd64.tar.xz" \
-	&& apt-get purge -y --auto-remove $buildDeps
+	&& apt-get clean
 
 CMD ["node"]
