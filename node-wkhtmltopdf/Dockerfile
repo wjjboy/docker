@@ -1,4 +1,4 @@
-FROM node:6.9.2-slim
+FROM node:8.9.3-slim
 MAINTAINER wjjboy <285701156@qq.com>
 
 ADD /fonts/ /usr/share/fonts/chinese/TrueType
