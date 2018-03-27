@@ -18,8 +18,8 @@ RUN cd /tmp \
 		libfftw3-dev \
 		--no-install-recommends \
 	&& wget https://www.imagemagick.org/download/ImageMagick-7.0.7-28.tar.gz \
-    && tar xvzf ImageMagick.tar.gz \
-	&& rm ImageMagick.tar.gz \
+    && tar xvzf ImageMagick-7.0.7-28.tar.gz \
+	&& rm ImageMagick-7.0.7-28.tar.gz \
 	&& cd ImageMagick-7.0.7-28 \
 	&& ./configure \
 	&& make -j4 \
