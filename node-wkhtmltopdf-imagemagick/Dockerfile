@@ -17,15 +17,14 @@ RUN cd /tmp \
 		libpcre3-dev \
 		libfftw3-dev \
 		--no-install-recommends \
-	&& wget https://www.imagemagick.org/download/ImageMagick.tar.gz \
-	&& mkdir imageMagick \
-    && tar xvzf ImageMagick.tar.gz -C imageMagick/ \
+	&& wget https://www.imagemagick.org/download/ImageMagick-7.0.7-28.tar.gz \
+    && tar xvzf ImageMagick.tar.gz \
 	&& rm ImageMagick.tar.gz \
-	&& cd imageMagick \
+	&& cd ImageMagick-7.0.7-28 \
 	&& ./configure \
 	&& make -j4 \
 	&& make install \
 	&& ldconfig /usr/local/lib \
 	&& cd .. \
-	&& rm -rf imageMagick\
+	&& rm -rf ImageMagick-7.0.7-28\
 	&& apt-get clean
