@@ -18,13 +18,13 @@ RUN cd /tmp \
 		libfftw3-dev \
 		--no-install-recommends \
 	&& wget https://www.imagemagick.org/download/ImageMagick.tar.gz \
-	&& tar xvzf ImageMagick.tar.gz \
+	&& tar xvzf ImageMagick.tar.gz -C imageMagick/ \
 	&& rm ImageMagick.tar.gz \
-	&& cd ImageMagick-7.0.7-22 \
+	&& cd imageMagick \
 	&& ./configure \
 	&& make -j4 \
 	&& make install \
 	&& ldconfig /usr/local/lib \
 	&& cd .. \
-	&& rm -rf ImageMagick-7.0.7-12\
+	&& rm -rf imageMagick\
 	&& apt-get clean
