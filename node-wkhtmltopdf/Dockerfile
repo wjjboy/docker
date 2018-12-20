@@ -10,16 +10,15 @@ RUN cd /tmp \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
-		ttf-mscorefonts-installer \
 		xfonts-base \
 		xfonts-75dpi \
 		xserver-common \
+		fonts-liberation \
 		fonts-wqy-microhei \
 		fonts-wqy-zenhei \
 		fonts-dejima-mincho \
 		fonts-takao \
 		fonts-takao-mincho \
-		fonts-takao-pgothic \
 		fonts-nanum-coding \
 		fonts-nanum \
 		fonts-nanum-extra \
