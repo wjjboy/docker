@@ -16,15 +16,9 @@ RUN cd /tmp \
 		fonts-wqy-microhei \
 		fonts-wqy-zenhei \
 		fonts-dejima-mincho \
-		fonts-umefon \
 		fonts-takao \
-		fonts-takao-gothic \
 		fonts-takao-mincho \
 		fonts-takao-pgothic \
-		fonts-kochi-gothic \
-		fonts-kochi-mincho \
-		fonts-sazanami-gothic \
-		fonts-sazanami-mincho \
 		fonts-nanum-coding \
 		fonts-nanum \
 		fonts-nanum-extra \
