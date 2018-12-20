@@ -1,7 +1,7 @@
 FROM node:8.9.3-slim
 MAINTAINER wjjboy <285701156@qq.com>
 
-#ADD /fonts/ /usr/share/fonts/chinese/TrueType
+ADD /fonts/ /usr/share/fonts/chinese
 
 RUN cd /tmp \
 	&& apt-get update \
@@ -12,17 +12,9 @@ RUN cd /tmp \
 		libxrender-dev \
 		xfonts-base \
 		xfonts-75dpi \
+		xfonts-100dpi \
 		xserver-common \
 		fonts-liberation \
-		fonts-wqy-microhei \
-		fonts-wqy-zenhei \
-		fonts-dejima-mincho \
-		fonts-takao \
-		fonts-takao-mincho \
-		fonts-nanum-coding \
-		fonts-nanum \
-		fonts-nanum-extra \
-		fonts-baekmuk \
 		--no-install-recommends \
 	&& curl -SLO "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" \
 	&& tar -xJf "wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
