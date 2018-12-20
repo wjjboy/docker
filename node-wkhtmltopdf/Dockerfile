@@ -1,12 +1,11 @@
 FROM node:8.9.3-slim
-MAINTAINER wjjboy <285701156@qq.com>
+
+LABEL maintainer "wjjboy<285701156@qq.com>"
 
 ADD /fonts/ /usr/share/fonts/chinese
 
-RUN cd /tmp \
-	&& apt-get update \
+RUN apt-get update \
 	&& apt-get install -y \
-		xz-utils \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
@@ -16,10 +15,12 @@ RUN cd /tmp \
 		xserver-common \
 		fonts-liberation \
 		--no-install-recommends \
-	&& curl -SLO "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" \
-	&& tar -xJf "wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
-	&& rm "wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" \
-	&& apt-get purge -y --auto-remove xz-utils \
-	&& apt-get clean
+	&& apt-get clean \
+	&& apt-get autoremove -y
+
+RUN cd /tmp \ 
+	&& curl -SLO "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb" \
+	&& dpkg --install wkhtmltox_0.12.5-1.stretch_amd64.deb \
+	&& rm wkhtmltox_0.12.5-1.stretch_amd64.deb
 
 CMD ["node"]
