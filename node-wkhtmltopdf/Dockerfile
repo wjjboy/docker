@@ -9,9 +9,8 @@ RUN apt-get update \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
-		libjpeg62-turbo \
-		libpng16-16 \
-		libssl1.1 \
+		libjpeg62 \
+		libpng-dev \
 		xfonts-base \
 		xfonts-utils \
 		xfonts-75dpi \
