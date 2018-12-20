@@ -13,22 +13,22 @@ RUN cd /tmp \
 		xfonts-base \
 		xfonts-75dpi \
 		xserver-common \
-		ttf-wqy-microhei \
-		ttf-wqy-zenhei \
-		ttf-dejima-mincho \
-		ttf-umefon \
-		ttf-takao \
-		ttf-takao-gothic \
-		ttf-takao-mincho \
-		ttf-takao-pgothic \
-		ttf-kochi-gothic \
-		ttf-kochi-mincho \
-		ttf-sazanami-gothic \
-		ttf-sazanami-mincho \
-		ttf-nanum-coding \
+		fonts-wqy-microhei \
+		fonts-wqy-zenhei \
+		fonts-dejima-mincho \
+		fonts-umefon \
+		fonts-takao \
+		fonts-takao-gothic \
+		fonts-takao-mincho \
+		fonts-takao-pgothic \
+		fonts-kochi-gothic \
+		fonts-kochi-mincho \
+		fonts-sazanami-gothic \
+		fonts-sazanami-mincho \
+		fonts-nanum-coding \
 		fonts-nanum \
 		fonts-nanum-extra \
-		ttf-baekmuk \
+		fonts-baekmuk \
 		--no-install-recommends \
 	&& curl -SLO "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" \
 	&& tar -xJf "wkhtmltox-0.12.4_linux-generic-amd64.tar.xz" -C /usr/local --strip-components=1 \
