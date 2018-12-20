@@ -10,6 +10,7 @@ RUN cd /tmp \
 		fontconfig \
 		libssl-dev \
 		libxrender-dev \
+		ttf-mscorefonts-installer \
 		xfonts-base \
 		xfonts-75dpi \
 		xserver-common \
