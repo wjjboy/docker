@@ -10,7 +10,8 @@ RUN apt-get update \
 		libssl-dev \
 		libxrender-dev \
 		libjpeg62 \
-		libpng-dev \
+		libpng16-16 \
+		libssl1.1 \
 		xfonts-base \
 		xfonts-utils \
 		xfonts-75dpi \
