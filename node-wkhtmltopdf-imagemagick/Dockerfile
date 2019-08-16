@@ -1,5 +1,5 @@
 FROM wjjboy/node-pdf:latest
-MAINTAINER Wujiajun <wujiajun@palmyou.com>
+MAINTAINER Wujiajun <285701156@qq.com>
 
 RUN cd /tmp \
 	&& apt-get update \
